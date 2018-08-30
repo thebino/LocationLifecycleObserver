@@ -1,0 +1,7 @@
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="app_name">Sample</string>
+    <string name="location_permission_denied">Location permission required!</string>
+    <string name="location_permission_request_button">Request again</string>
+    <string name="latitude">Latitude <xliff:g id="latitude" example="-11.12345">%1$.5f</xliff:g></string>
+    <string name="longitude">Longitude <xliff:g id="longitude" example="40.5678">%1$.5f</xliff:g></string>
+</resources>
