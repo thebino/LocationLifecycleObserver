@@ -24,7 +24,7 @@ class DeviceLocationObserver(
 
     @OnLifecycleEvent(Lifecycle.Event.ON_START)
     fun start() {
-        locationManager.requestLocationUpdates(LocationManager.GPS_PROVIDER, Long.MIN_VALUE, Float.MIN_VALUE, listener)
+        locationManager.requestLocationUpdates(LocationManager.GPS_PROVIDER, 10_000L, 2_000L, listener)
 
         val lastLocation = locationManager.getLastKnownLocation(LocationManager.GPS_PROVIDER)
         if (lastLocation != null) {
